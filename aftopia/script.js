@@ -27,22 +27,31 @@ const swiper = new Swiper('.swiper', {
 // ==========================================================
 
 
-function firstToUpperCase(str)
-{
-let arr=str.split("")
-let i=0
-while(i != arr.length)
-{
-  arr[0]=arr[0].toUpperCase()
-  if(arr[i-1] == " "){
-    arr[i]=arr[i].toUpperCase()
-  }
-i++
-}
-return arr.join("")
-}
+// function firstToUpperCase(str)
+// {
+// let arr=str.split("")
+// let i=0
+// while(i != arr.length)
+// {
+//   arr[0]=arr[0].toUpperCase()
+//   if(arr[i-1] == " "){
+//     arr[i]=arr[i].toUpperCase()
+//   }
+// i++
+// }
+// return arr.join("")
+// }
 
-let str = "here is your string"
-console.log("str before func: ", str)
-str = firstToUpperCase(str)
-console.log("str after func: ", str)
+// let str = "here is your string"
+// console.log("str before func: ", str)
+// str = firstToUpperCase(str)
+// console.log("str after func: ", str)
+
+
+// ==========================================================
+
+// ==========================================================
+window.addEventListener("scroll", ()=>{
+  console.log(window.pageYOffset + 'px');
+})
+// в мене ідея зробити тут щось типу if(window.pageYOffset > 600) {почати анімацію topcreators__card_anim }
