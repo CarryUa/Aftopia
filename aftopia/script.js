@@ -51,7 +51,16 @@ const swiper = new Swiper('.swiper', {
 // ==========================================================
 
 // ==========================================================
+let nScroll;
 window.addEventListener("scroll", ()=>{
-  console.log(window.pageYOffset + 'px');
+  nScroll=window.scrollY
+  if(nScroll > 500) 
+  {
+    console.log(nScroll + 'px');
+  }
+  document.querySelector("#scroll__text").innerHTML = nScroll+'px';
+  
+
 })
+
 // в мене ідея зробити тут щось типу if(window.pageYOffset > 600) {почати анімацію topcreators__card_anim }
