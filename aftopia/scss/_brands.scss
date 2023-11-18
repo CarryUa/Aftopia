@@ -1,0 +1,33 @@
+.brands{
+    &__content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        padding:  52px;
+        column-gap: 15px;
+        row-gap: 30px;
+        border: 1px solid rgba(192, 204, 218, 0.6);
+    }
+     &_animation{
+    
+    }
+     &_wrapper{
+    
+    }
+
+     &__item{
+        animation: brands__item_anim .5s linear;
+    }
+}
+@keyframes brands__item_anim{
+    0%{
+        rotate: 0deg;
+    }
+    50%{
+        rotate: 45deg;
+    }
+    100%{
+        rotate: 0deg;
+    }
+}

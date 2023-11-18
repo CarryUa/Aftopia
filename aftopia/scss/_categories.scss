@@ -1,0 +1,43 @@
+.categories{
+&__header {} 
+&__text {}
+&__tittle {
+    font-weight: 600;
+    margin-bottom: 72px;
+}
+&__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 36px;
+}
+&__card {
+    background: #3b3b3b;
+    border-radius: 25px;
+    overflow: hidden;
+    flex: 1 0 293px;
+    transition: all 0.3s ease;
+    :hover{
+        transition: all .3s ease;
+        transform: scale(1.05);
+    }
+    &-image{
+        position: relative;
+        height: 295px;
+        overflow: hidden;
+        img{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        filter: blur(10px);
+       }
+    }
+}
+}
+.container {
+    max-width: 1310px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
