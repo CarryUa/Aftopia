@@ -1,31 +1,31 @@
 const button = document.querySelector(".header__login");
 button.addEventListener("click", () => {
   button.classList.toggle("active");
-})
-const swiper = new Swiper('.swiper', {
+  button.innerHTML = "Singed in";
+});
+const swiper = new Swiper(".swiper", {
   // Optional parameters
-  direction: 'horizontal',
+  direction: "horizontal",
   loop: true,
 
   // If we need pagination
   pagination: {
-    el: '.swiper-pagination',
+    el: ".swiper-pagination",
   },
 
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 
   // And if we need scrollbar
   scrollbar: {
-    el: '.swiper-scrollbar',
+    el: ".swiper-scrollbar",
   },
 });
 
 // ==========================================================
-
 
 // function firstToUpperCase(str)
 // {
@@ -47,20 +47,14 @@ const swiper = new Swiper('.swiper', {
 // str = firstToUpperCase(str)
 // console.log("str after func: ", str)
 
-
 // ==========================================================
 
 // ==========================================================
-let nScroll;
-window.addEventListener("scroll", ()=>{
-  nScroll=window.scrollY
-  if(nScroll > 500) 
-  {
-    console.log(nScroll + 'px');
-  }
-  document.querySelector("#scroll__text").innerHTML = nScroll+'px';
-  
-
-})
-
-// в мене ідея зробити тут щось типу if(window.pageYOffset > 600) {почати анімацію topcreators__card_anim }
+// let nScroll;
+// window.addEventListener("scroll", () => {
+//   nScroll = window.scrollY;
+//   if (nScroll > 500) {
+//     console.log(nScroll + "px");
+//   }
+//   document.querySelector("#scroll__text").innerHTML = nScroll + "px";
+// });

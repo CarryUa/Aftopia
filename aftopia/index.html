@@ -6,13 +6,13 @@
     <title>afopia</title>
     <link rel="stylesheet" href="./scss/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    
+    <header class="header">
         <div class="container">
             <div class="header__content">
                 <div class="header__logo"><h1>Aftopia</h1></div>
@@ -28,7 +28,49 @@
             </div>
         </div>
     </header>
-    <div class="scroll"><p id="scroll__text"></p></div>
+    <section class="hero">
+        <div class="container">
+        <div class="hero__content">
+            <div class="hero__img">
+                <div class="hero__image-left">
+                    <img src="./pictures/hero-left.jpg" alt="left image of hero">
+                </div>
+                <div class="hero__image-right">
+                    <img src="./pictures/hero-right.jpg" alt="right image of hero">
+                </div>
+            </div>
+            <div class="hero__text">
+                <h1 class = "hero__title">Buy and Sell Digital Arts</h1>
+                <p class="hero__description">The world’s largest online marketplace of online digital art </p>
+                <p class="hero__explore">Explore</p>
+                <div class="hero__stat">
+                    <div class="hero__data">
+                        <div class="hero__numbers">999,000</div>
+                        <div class="hero__name">Digital art file</div>                            
+                    </div>
+                    <div class="hero__data">
+                        <div class="hero__numbers">2,000</div>
+                        <div class="hero__name">Art Seller</div>                            
+                    </div>
+                    <div class="hero__data">
+                        <div class="hero__numbers">10,000</div>
+                        <div class="hero__name">Buyer</div>                            
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <img class="hero__decor" src="./pictures/hero-down.svg" alt="">
+        <div class="hero__background1">
+            <div class="hero__background1__white"></div>
+        </div>
+        <div class="hero__background_rt">
+
+        </div>
+        <div class="hero__background_lb"></div>
+    </div>
+    </section>
+    
     <section class="brands">
         <div class="brands_animation">
             <div class="brands_wrapper">
@@ -150,6 +192,7 @@
                 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D" class="categories__card">
                     <div class="categories__card-image">
                         <img class="card-categories__image" src="./pictures/Image Placeholder.jpg" alt="Digital Art">
+                        <img src="./pictures/Camera.svg" alt="#" class="categories__card-subimage">
                     </div>
                         <h4 class="card-categories__tittle">Digital Art</h4>
                     </a>
@@ -160,6 +203,7 @@
                 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D" class="categories__card">
                         <div class="categories__card-image">
                         <img class="card-categories__image" src="./pictures/Image Placeholder(1).jpg" alt="Game assets">
+                        <img src="./pictures/Planet.svg" alt="#" class="categories__card-subimage">
                     </div>
                         <h4 class="card-categories__tittle">Game assets</h4>
                     </a>
@@ -167,6 +211,7 @@
                 <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D" class="categories__card">
                     <div class="categories__card-image">
                         <img class="card-categories__image" src="./pictures/Image Placeholder (2).jpg" alt="Audio">
+                        <img src="./pictures/MusicNotes.svg" alt="#" class="categories__card-subimage">
                     </div>
                         <h4 class="card-categories__tittle">Audio</h4>
                     </a>
