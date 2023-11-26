@@ -25,6 +25,9 @@
     }
     &-image {
       position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       height: 295px;
       overflow: hidden;
       img {
@@ -35,6 +38,11 @@
         left: 0;
         object-fit: cover;
         // filter: blur(10px);
+      }
+      &__content {
+        position: absolute;
+        height: 50%;
+        width: 50%;
       }
     }
     &-subimage {

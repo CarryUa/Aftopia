@@ -58,3 +58,9 @@ const swiper = new Swiper(".swiper", {
 //   }
 //   document.querySelector("#scroll__text").innerHTML = nScroll + "px";
 // });
+const button2 = document.querySelector("#sub2getnews__input-submit");
+console.log(button2);
+button2.addEventListener("click", () => {
+  button2.classList.toggle("done");
+  button2.innerHTML = "Done";
+});
