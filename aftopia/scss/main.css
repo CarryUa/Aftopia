@@ -123,6 +123,7 @@ button {
 }
 .getstarted__cards {
   display: flex;
+  padding: 10px;
   justify-content: center;
   height: 280px;
   width: 320px;
@@ -299,6 +300,7 @@ button {
   overflow: hidden;
 }
 .hero__content {
+  padding: 30px 0;
   display: flex;
 }
 .hero__img {
