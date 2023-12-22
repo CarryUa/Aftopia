@@ -1,353 +1,591 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>afopia</title>
-    <link rel="stylesheet" href="./scss/main.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    
-    <header class="header">
-        <div class="container">
-            <div class="header__content">
-                <div class="header__logo"><h1>Aftopia</h1></div>
-                <nav class="header__menu">
-                    <ul class="menu__list">
-                        <li class="menu__item"><a href="" class="imenu__link"></a>Discover</li>
-                        <li class="menu__item"><a href="" class="imenu__link"></a>Forum</li>
-                        <li class="menu__item"><a href="" class="imenu__link"></a>News</li>
-                        <li class="menu__item"><a href="" class="imenu__link"></a>Blog</li>
-                    </ul>
-                </nav>
-                <button type="button" class="header__login">Sing in</button>
-            </div>
+    <link rel="stylesheet" href="./scss/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <form action="#" class="login">
+      <div class="container">
+        <div class="login__content">
+          <input
+            class="login__email"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            value=""
+          />
+          <button class="login__button" type="submit">Send</button>
         </div>
-    </header>
+      </div>
+    </form>
 
-    <section class="hero">
+    <header class="header hidden">
+      <div class="container">
+        <div class="header__content">
+          <div class="header__logo"><h1>Aftopia</h1></div>
+          <nav class="header__menu">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="" class="imenu__link"></a>Discover
+              </li>
+              <li class="menu__item">
+                <a href="" class="imenu__link"></a>Forum
+              </li>
+              <li class="menu__item">
+                <a href="" class="imenu__link"></a>News
+              </li>
+              <li class="menu__item">
+                <a href="" class="imenu__link"></a>Blog
+              </li>
+            </ul>
+          </nav>
+          <button type="button" class="header__login">Sing in</button>
+        </div>
+      </div>
+    </header>
+    <main class="hidden">
+      <section class="hero">
         <div class="container">
-        <div class="hero__content">
+          <div class="hero__content">
             <div class="hero__img">
-                <div class="hero__image-left">
-                    <img src="./pictures/hero-left.jpg" alt="left image of hero">
-                </div>
-                <div class="hero__image-right">
-                    <img src="./pictures/hero-right.jpg" alt="right image of hero">
-                </div>
+              <div class="hero__image-left">
+                <img src="./pictures/hero-left.jpg" alt="left image of hero" />
+              </div>
+              <div class="hero__image-right">
+                <img
+                  src="./pictures/hero-right.jpg"
+                  alt="right image of hero"
+                />
+              </div>
             </div>
             <div class="hero__text">
-                <h1 class = "hero__title">Buy and Sell Digital Arts</h1>
-                <p class="hero__description">The world’s largest online marketplace of online digital art </p>
-                <p class="hero__explore">Explore</p>
-                <div class="hero__stat">
-                    <div class="hero__data">
-                        <div class="hero__numbers">999,000</div>
-                        <div class="hero__name">Digital art file</div>                            
-                    </div>
-                    <div class="hero__data">
-                        <div class="hero__numbers">2,000</div>
-                        <div class="hero__name">Art Seller</div>                            
-                    </div>
-                    <div class="hero__data">
-                        <div class="hero__numbers">10,000</div>
-                        <div class="hero__name">Buyer</div>                            
-                    </div>
+              <h1 class="hero__title">Buy and Sell Digital Arts</h1>
+              <p class="hero__description">
+                The world’s largest online marketplace of online digital art
+              </p>
+              <p class="hero__explore">Explore</p>
+              <div class="hero__stat">
+                <div class="hero__data">
+                  <div class="hero__numbers">999,000</div>
+                  <div class="hero__name">Digital art file</div>
                 </div>
-                
+                <div class="hero__data">
+                  <div class="hero__numbers">2,000</div>
+                  <div class="hero__name">Art Seller</div>
+                </div>
+                <div class="hero__data">
+                  <div class="hero__numbers">10,000</div>
+                  <div class="hero__name">Buyer</div>
+                </div>
+              </div>
             </div>
-        </div>
-        <img class="hero__decor" src="./pictures/hero-down.svg" alt="">
-        <div class="hero__background1">
+          </div>
+          <img class="hero__decor" src="./pictures/hero-down.svg" alt="" />
+          <div class="hero__background1">
             <div class="hero__background1__white"></div>
+          </div>
+          <div class="hero__background_rt"></div>
+          <div class="hero__background_lb"></div>
         </div>
-        <div class="hero__background_rt">
+      </section>
 
-        </div>
-        <div class="hero__background_lb"></div>
-    </div>
-    </section>
-    
-    <section class="brands">
+      <section class="brands">
         <div class="container">
-            <div class="brands_animation">
-                <div class="brands_wrapper">
-                    <div class="container">
-                        <div class="brands__content">
-                            <img class="brands__item" src="./pictures/Bethesda_Game_Studios_logo 1.svg" alt="">
-                            <img class="brands__item" src="./pictures/BioWare_logo 1.svg" alt="">
-                            <img class="brands__item" src="./pictures/Component 4.svg" alt="">
-                            <img class="brands__item" src="./pictures/Ensemble_Studios_Logo 1.svg" alt="">
-                        </div>
-                    </div>
+          <div class="brands_animation">
+            <div class="brands_wrapper">
+              <div class="container">
+                <div class="brands__content">
+                  <img
+                    class="brands__item"
+                    src="./pictures/Bethesda_Game_Studios_logo 1.svg"
+                    alt=""
+                  />
+                  <img
+                    class="brands__item"
+                    src="./pictures/BioWare_logo 1.svg"
+                    alt=""
+                  />
+                  <img
+                    class="brands__item"
+                    src="./pictures/Component 4.svg"
+                    alt=""
+                  />
+                  <img
+                    class="brands__item"
+                    src="./pictures/Ensemble_Studios_Logo 1.svg"
+                    alt=""
+                  />
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
-    
-    <section class="getstarted">
+      </section>
+
+      <section class="getstarted">
         <div class="container">
-            <div class="container">
-                <div class="getstarted__text_animation">
-                    <div class="getstarted__text_wrapper">
-                        <div class="getsarted__text"><h1>Geting Started In 3 Steps</h1></div>
-                    </div>
+          <div class="container">
+            <div class="getstarted__text_animation">
+              <div class="getstarted__text_wrapper">
+                <div class="getsarted__text">
+                  <h1>Geting Started In 3 Steps</h1>
                 </div>
-
+              </div>
             </div>
-            <div class="getstarted__content">
-                 
-                    <div class="getstarted__cards">
-                        <img src="./pictures/Vector (1).svg" alt="">
-                        <h3>Upload your best art</h3>
-                        <h5>Start the upload by creating an account</h5>
-                    </div>
-
-                    <div class="getstarted__cards">
-                        <img src="./pictures/NFT Pic.svg" alt="">
-                        <h3>Fill out the product info </h3>
-                        <h5>Fill out the required information and pricing and you are set</h5>
-                    </div>
-
-                    <div class="getstarted__cards">
-                        <img src="./pictures/Layer 2.svg" alt="">
-                        <h3>Start Selling & Growing</h3>
-                        <h5>Choose Between Auctions, Fixed-Price Listings, And Declining-Price Listings. You Choose How You Want To Sell Your NFTs!</h5>
-                    </div>
-                
+          </div>
+          <div class="getstarted__content">
+            <div class="getstarted__cards">
+              <img src="./pictures/Vector (1).svg" alt="" />
+              <h3>Upload your best art</h3>
+              <h5>Start the upload by creating an account</h5>
             </div>
-            
+
+            <div class="getstarted__cards">
+              <img src="./pictures/NFT Pic.svg" alt="" />
+              <h3>Fill out the product info</h3>
+              <h5>
+                Fill out the required information and pricing and you are set
+              </h5>
+            </div>
+
+            <div class="getstarted__cards">
+              <img src="./pictures/Layer 2.svg" alt="" />
+              <h3>Start Selling & Growing</h3>
+              <h5>
+                Choose Between Auctions, Fixed-Price Listings, And
+                Declining-Price Listings. You Choose How You Want To Sell Your
+                NFTs!
+              </h5>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section class="sub2getnews">
+      <section class="sub2getnews">
         <div class="container">
-            <div class="sub2getnews__content">
-                <div class="sub2getnews__image">
-                    <div class="sub2getnews__image__wrapper" id="sub2getnews__image__wrapper-1">
-                        <img class="sub2getnews__image-1" src="./pictures/sub2getnews1.jpg" alt="#">
-                    </div>
-                    <div class="sub2getnews__image__wrapper" id="sub2getnews__image__wrapper-2">
-                        <img class="sub2getnews__image-2" src="./pictures/sub2getnews2.jpg" alt="#">
-                    </div>
-                    <div class="sub2getnews__image__wrapper" id="sub2getnews__image__wrapper-3">
-                        <img class="sub2getnews__image-3" src="./pictures/sub2getnews3.jpg" alt="#">
-                    </div>
-                </div>
-                <div class="sub2getnews__text">
-                    <h1>Subscribe to get fresh news and updates about Digital Art</h1>
-                    <p>The World's Largest Digital Marketplace for digital art and 3d assets</p>
-                    <div class="sub2getnews__input">
-                        <input placeholder="        Email Address" type="email" name="" id="sub2getnews__input-email">
-                        <button id="sub2getnews__input-submit" type="submit">Subscribe</button>
-                    </div>
-                </div>
+          <div class="sub2getnews__content">
+            <div class="sub2getnews__image">
+              <div
+                class="sub2getnews__image__wrapper"
+                id="sub2getnews__image__wrapper-1"
+              >
+                <img
+                  class="sub2getnews__image-1"
+                  src="./pictures/sub2getnews1.jpg"
+                  alt="#"
+                />
+              </div>
+              <div
+                class="sub2getnews__image__wrapper"
+                id="sub2getnews__image__wrapper-2"
+              >
+                <img
+                  class="sub2getnews__image-2"
+                  src="./pictures/sub2getnews2.jpg"
+                  alt="#"
+                />
+              </div>
+              <div
+                class="sub2getnews__image__wrapper"
+                id="sub2getnews__image__wrapper-3"
+              >
+                <img
+                  class="sub2getnews__image-3"
+                  src="./pictures/sub2getnews3.jpg"
+                  alt="#"
+                />
+              </div>
             </div>
-
+            <div class="sub2getnews__text">
+              <h1>Subscribe to get fresh news and updates about Digital Art</h1>
+              <p>
+                The World's Largest Digital Marketplace for digital art and 3d
+                assets
+              </p>
+              <div class="sub2getnews__input">
+                <input
+                  placeholder="        Email Address"
+                  type="email"
+                  name=""
+                  id="sub2getnews__input-email"
+                />
+                <button id="sub2getnews__input-submit" type="submit">
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section class="topcreators">
+      <section class="topcreators">
         <div class="container">
-            <div class="topcreators__text">
-                <h2>Top Creators</h2>
-                <p>Checkout Top Rated Creators on the NFT Marketplace</p>
-            </div>
-            <div class="topcreators__creators">
-                <div class="topcreators__creators_animation">
-                    <div class="topcreators__creators_wrapper">
-                        <div class="topcreators__card">
-                            <div class="topcreators__card__circle">
-                                <p>1</p>
-                            </div>
-                            <img src="./pictures/Avatar Placeholder.svg" alt="">
-                            <h3>Keepitreal</h3>
-                            <p>Total Sales:  34.5K USD</p>
-                        </div>
-                        <div class="topcreators__card">
-                            <div class="topcreators__card__circle">
-                                <p>2</p>
-                            </div>
-                            <img src="./pictures/Avatar Placeholder (1).svg" alt="">
-                            <h3>DigiLab</h3>
-                            <p>Total Sales:  34.5K USD</p>
-                        </div>
-                        <div class="topcreators__card">
-                            <div class="topcreators__card__circle">
-                                <p>3</p>
-                            </div>
-                            <img src="./pictures/Avatar Placeholder (2).svg" alt="">
-                            <h3>GravityOne</h3>
-                            <p>Total Sales:  34.5K USD</p>
-                        </div>
-                        <div class="topcreators__card">
-                            <div class="topcreators__card__circle">
-                                <p>4</p>
-                            </div>
-                            <img src="./pictures/Avatar Placeholder (3).svg" alt="">
-                            <h3>Juanie</h3>
-                            <p>Total Sales:  34.5K USD</p>
-                        </div>
-                    </div>
+          <div class="topcreators__text">
+            <h2>Top Creators</h2>
+            <p>Checkout Top Rated Creators on the NFT Marketplace</p>
+          </div>
+          <div class="topcreators__creators">
+            <div class="topcreators__creators_animation">
+              <div class="topcreators__creators_wrapper">
+                <div class="topcreators__card">
+                  <div class="topcreators__card__circle">
+                    <p>1</p>
+                  </div>
+                  <img src="./pictures/Avatar Placeholder.svg" alt="" />
+                  <h3>Keepitreal</h3>
+                  <p>Total Sales: 34.5K USD</p>
                 </div>
-                
-            </div>
-            <div class="topcreators__creators">
-                <div class="topcreators__creators_animation">
-                    <div class="topcreators__creators_wrapper">
-    
-                        <div class="topcreators__card">
-                            <div class="topcreators__card__circle">
-                                <p>5</p>
-                            </div>
-                            <img src="./pictures/Avatar Placeholder (4).svg" alt="">
-                            <h3>BlueWhale</h3>
-                            <p>Total Sales:  34.5K USD</p>
-                        </div>
-                        <div class="topcreators__card">
-                            <div class="topcreators__card__circle">
-                                <p>6</p>
-                            </div>
-                            <img src="./pictures/Avatar Placeholder (5).svg" alt="">
-                            <h3>mr fox</h3>
-                            <p>Total Sales:  34.5K USD</p>
-                        </div>
-                        <div class="topcreators__card">
-                            <div class="topcreators__card__circle">
-                                <p>7</p>
-                            </div>
-                            <img src="./pictures/Avatar Placeholder (6).svg" alt="">
-                            <h3>Shroomie</h3>
-                            <p>Total Sales:  34.5K USD</p>
-                        </div>
-                        <div class="topcreators__card">
-                            <div class="topcreators__card__circle">
-                                <p>8</p>
-                            </div>
-                            <img src="./pictures/Avatar Placeholder (7).svg" alt="">
-                            <h3>robotica</h3>
-                            <p>Total Sales:  34.5K USD</p>
-                        </div>
-                    </div>
+                <div class="topcreators__card">
+                  <div class="topcreators__card__circle">
+                    <p>2</p>
+                  </div>
+                  <img src="./pictures/Avatar Placeholder (1).svg" alt="" />
+                  <h3>DigiLab</h3>
+                  <p>Total Sales: 34.5K USD</p>
                 </div>
+                <div class="topcreators__card">
+                  <div class="topcreators__card__circle">
+                    <p>3</p>
+                  </div>
+                  <img src="./pictures/Avatar Placeholder (2).svg" alt="" />
+                  <h3>GravityOne</h3>
+                  <p>Total Sales: 34.5K USD</p>
+                </div>
+                <div class="topcreators__card">
+                  <div class="topcreators__card__circle">
+                    <p>4</p>
+                  </div>
+                  <img src="./pictures/Avatar Placeholder (3).svg" alt="" />
+                  <h3>Juanie</h3>
+                  <p>Total Sales: 34.5K USD</p>
+                </div>
+              </div>
             </div>
+          </div>
+          <div class="topcreators__creators">
+            <div class="topcreators__creators_animation">
+              <div class="topcreators__creators_wrapper">
+                <div class="topcreators__card">
+                  <div class="topcreators__card__circle">
+                    <p>5</p>
+                  </div>
+                  <img src="./pictures/Avatar Placeholder (4).svg" alt="" />
+                  <h3>BlueWhale</h3>
+                  <p>Total Sales: 34.5K USD</p>
+                </div>
+                <div class="topcreators__card">
+                  <div class="topcreators__card__circle">
+                    <p>6</p>
+                  </div>
+                  <img src="./pictures/Avatar Placeholder (5).svg" alt="" />
+                  <h3>mr fox</h3>
+                  <p>Total Sales: 34.5K USD</p>
+                </div>
+                <div class="topcreators__card">
+                  <div class="topcreators__card__circle">
+                    <p>7</p>
+                  </div>
+                  <img src="./pictures/Avatar Placeholder (6).svg" alt="" />
+                  <h3>Shroomie</h3>
+                  <p>Total Sales: 34.5K USD</p>
+                </div>
+                <div class="topcreators__card">
+                  <div class="topcreators__card__circle">
+                    <p>8</p>
+                  </div>
+                  <img src="./pictures/Avatar Placeholder (7).svg" alt="" />
+                  <h3>robotica</h3>
+                  <p>Total Sales: 34.5K USD</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <section class="categories">
+      <section class="categories">
         <div class="container">
-    
-    
-            <div class="categories__header">
-                <h2 class="categories__tittle">Categories</h2>
-            </div>
-    
-    
-            <div class="categories__cards">
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D" class="categories__card">
-                    <div class="categories__card-image">
-                        <img class="card-categories__image" src="./pictures/Image Placeholder.jpg" alt="Digital Art">
-                        <div class="categories__card-image__content">
-                            <img src="./pictures/PaintBrush.svg" alt="#" class="categories__card-subimage">
-                        </div>
-                    </div>
-                        <h4 class="card-categories__tittle">Digital Art</h4>
-                    </a>
+          <div class="categories__header">
+            <h2 class="categories__tittle">Categories</h2>
+          </div>
 
-    
-    
-                
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D" class="categories__card">
-                        <div class="categories__card-image">
-                        <img class="card-categories__image" src="./pictures/Image Placeholder(1).jpg" alt="Game assets">
-                        <div class="categories__card-image__content">
-                            <img src="./pictures/Swatches.svg" alt="#" class="categories__card-subimage">
-                        </div>
-                    </div>
-                        <h4 class="card-categories__tittle">Game assets</h4>
-                    </a>
-                
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D" class="categories__card">
-                    <div class="categories__card-image">
-                        <img class="card-categories__image" src="./pictures/Image Placeholder (2).jpg" alt="Audio">
-                        <div class="categories__card-image__content">
-                            <img src="./pictures/MusicNotes.svg" alt="#" class="categories__card-subimage">
-                        </div>
-                    </div>
-                        <h4 class="card-categories__tittle">Audio</h4>
-                    </a>
-                
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D" class="categories__card">
-                        <div class="categories__card-image">
-                        <img class="card-categories__image" src="./pictures/Image Placeholder (3).jpg" alt="Photography">
-                        <div class="categories__card-image__content">
-                            <img src="./pictures/Camera.svg" alt="#" class="categories__card-subimage">
-                        </div>
-                    </div>
-                        <h4 class="card-categories__tittle">Photography</h4>
-        
-                    </a>
-    
-    
-                
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D" class="categories__card">
-                        <div class="categories__card-image">
-                        <img class="card-categories__image" src="./pictures/Image Placeholder (4).jpg" alt="Animation">
-                        <div class="categories__card-image__content">
-                            <img src="./pictures/VideoCamera.svg" alt="#" class="categories__card-subimage">
-                        </div>
-                    </div>
-                        <h4 class="card-categories__tittle">Animation</h4>
-        
-                    </a>
-                
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D" class="categories__card">
-                        <div class="categories__card-image">
-                        <img class="card-categories__image" src="./pictures/Image Placeholder (5).jpg" alt="Modeling">
-                        <div class="categories__card-image__content">
-                            <img src="./pictures/MagicWand.svg" alt="#" class="categories__card-subimage">
-                        </div>
-                    </div>
-                        <h4 class="card-categories__tittle">Modeling</h4>
-        
-                    </a>
-                
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D" class="categories__card">
-                        <div class="categories__card-image">
-                        <img class="card-categories__image" src="./pictures/Image Placeholder (6).jpg" alt="Game art">
-                        <div class="categories__card-image__content">
-                            <img src="./pictures/Basketball.svg" alt="#" class="categories__card-subimage">
-                        </div>
-                    </div>
-                        <h4 class="card-categories__tittle">Game art</h4>
-        
-                    </a>
-                
-                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D" class="categories__card">
-                        <div class="categories__card-image">
-                            <img class="card-categories__image" src="./pictures/Image Placeholder (7).jpg" alt="Illustration">
-                            <div class="categories__card-image__content">
-                                <img src="./pictures/Planet.svg" alt="#" class="categories__card-subimage">
-                            </div>
-                        </div>
-                        <h4 class="card-categories__tittle">Illustration</h4>
-        
-                    </a>
-                    
+          <div class="categories__cards">
+            <a
+              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D"
+              class="categories__card"
+            >
+              <div class="categories__card-image">
+                <img
+                  class="card-categories__image"
+                  src="./pictures/Image Placeholder.jpg"
+                  alt="Digital Art"
+                />
+                <div class="categories__card-image__content">
+                  <img
+                    src="./pictures/PaintBrush.svg"
+                    alt="#"
+                    class="categories__card-subimage"
+                  />
+                </div>
+              </div>
+              <h4 class="card-categories__tittle">Digital Art</h4>
+            </a>
+
+            <a
+              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D"
+              class="categories__card"
+            >
+              <div class="categories__card-image">
+                <img
+                  class="card-categories__image"
+                  src="./pictures/Image Placeholder(1).jpg"
+                  alt="Game assets"
+                />
+                <div class="categories__card-image__content">
+                  <img
+                    src="./pictures/Swatches.svg"
+                    alt="#"
+                    class="categories__card-subimage"
+                  />
+                </div>
+              </div>
+              <h4 class="card-categories__tittle">Game assets</h4>
+            </a>
+
+            <a
+              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D"
+              class="categories__card"
+            >
+              <div class="categories__card-image">
+                <img
+                  class="card-categories__image"
+                  src="./pictures/Image Placeholder (2).jpg"
+                  alt="Audio"
+                />
+                <div class="categories__card-image__content">
+                  <img
+                    src="./pictures/MusicNotes.svg"
+                    alt="#"
+                    class="categories__card-subimage"
+                  />
+                </div>
+              </div>
+              <h4 class="card-categories__tittle">Audio</h4>
+            </a>
+
+            <a
+              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D"
+              class="categories__card"
+            >
+              <div class="categories__card-image">
+                <img
+                  class="card-categories__image"
+                  src="./pictures/Image Placeholder (3).jpg"
+                  alt="Photography"
+                />
+                <div class="categories__card-image__content">
+                  <img
+                    src="./pictures/Camera.svg"
+                    alt="#"
+                    class="categories__card-subimage"
+                  />
+                </div>
+              </div>
+              <h4 class="card-categories__tittle">Photography</h4>
+            </a>
+
+            <a
+              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D"
+              class="categories__card"
+            >
+              <div class="categories__card-image">
+                <img
+                  class="card-categories__image"
+                  src="./pictures/Image Placeholder (4).jpg"
+                  alt="Animation"
+                />
+                <div class="categories__card-image__content">
+                  <img
+                    src="./pictures/VideoCamera.svg"
+                    alt="#"
+                    class="categories__card-subimage"
+                  />
+                </div>
+              </div>
+              <h4 class="card-categories__tittle">Animation</h4>
+            </a>
+
+            <a
+              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D"
+              class="categories__card"
+            >
+              <div class="categories__card-image">
+                <img
+                  class="card-categories__image"
+                  src="./pictures/Image Placeholder (5).jpg"
+                  alt="Modeling"
+                />
+                <div class="categories__card-image__content">
+                  <img
+                    src="./pictures/MagicWand.svg"
+                    alt="#"
+                    class="categories__card-subimage"
+                  />
+                </div>
+              </div>
+              <h4 class="card-categories__tittle">Modeling</h4>
+            </a>
+
+            <a
+              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D"
+              class="categories__card"
+            >
+              <div class="categories__card-image">
+                <img
+                  class="card-categories__image"
+                  src="./pictures/Image Placeholder (6).jpg"
+                  alt="Game art"
+                />
+                <div class="categories__card-image__content">
+                  <img
+                    src="./pictures/Basketball.svg"
+                    alt="#"
+                    class="categories__card-subimage"
+                  />
+                </div>
+              </div>
+              <h4 class="card-categories__tittle">Game art</h4>
+            </a>
+
+            <a
+              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUIcmlja3JvbGw%3D"
+              class="categories__card"
+            >
+              <div class="categories__card-image">
+                <img
+                  class="card-categories__image"
+                  src="./pictures/Image Placeholder (7).jpg"
+                  alt="Illustration"
+                />
+                <div class="categories__card-image__content">
+                  <img
+                    src="./pictures/Planet.svg"
+                    alt="#"
+                    class="categories__card-subimage"
+                  />
+                </div>
+              </div>
+              <h4 class="card-categories__tittle">Illustration</h4>
+            </a>
+          </div>
+        </div>
+        <!-- </div> -->
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__main">
+            <div class="footer__subscribe">
+              <h2 class="footer__logo">Artopia</h2>
+              <p class="footer__description">
+                Enter your email to get notified by ArtBit for latest updates.
+              </p>
+              <div class="footer__social">
+                <a href="#" target="_blank" class="footer__social-x"
+                  ><img src="./pictures/X.svg" alt="X"
+                /></a>
+                <a href="#" target="_blank" class="footer__social-insta"
+                  ><img src="./pictures/insta.svg" alt="instagram"
+                /></a>
+                <a href="#" target="_blank" class="footer__social-in"
+                  ><img src="./pictures/In.svg" alt="In"
+                /></a>
+              </div>
+              <form class="footer__form">
+                <input type="email" name="Email" placeholder="Email Address" />
+                <button type="submit">
+                  <img src="./pictures/arrow-right-solid (1).svg" alt="arrow" />
+                </button>
+              </form>
             </div>
-    
-    
-    
-    
+            <div class="footer__menu">
+              <ul class="footer__menu__items">
+                <p class="footer__menu-title">Artopia</p>
+                <a href="#" target="_blank" class="footer__menu-item"
+                  >Explore</a
+                >
+                <a href="#" target="_blank" class="footer__menu-item"
+                  >Digital Art</a
+                >
+                <a href="#" target="_blank" class="footer__menu-item">About</a>
+              </ul>
+              <ul class="footer__menu__items">
+                <p class="footer__menu-title">My Account</p>
+                <a href="#" target="_blank" class="footer__menu-item"
+                  >Favourites</a
+                >
+                <a href="#" target="_blank" class="footer__menu-item"
+                  >Watchlist</a
+                >
+                <a href="#" target="_blank" class="footer__menu-item"
+                  >My Collections</a
+                >
+                <a href="#" target="_blank" class="footer__menu-item"
+                  >Settings</a
+                >
+              </ul>
+              <ul class="footer__menu__items">
+                <p class="footer__menu-title">Resources</p>
+                <a href="#" target="_blank" class="footer__menu-item"
+                  >Platform Status</a
+                >
+                <a href="#" target="_blank" class="footer__menu-item"
+                  >Partners</a
+                >
+                <a href="#" target="_blank" class="footer__menu-item">Taxes</a>
+                <a href="#" target="_blank" class="footer__menu-item"
+                  >Newsletter</a
+                >
+              </ul>
+              <ul class="footer__menu__items">
+                <p class="footer__menu-title">Community</p>
+                <a href="#" target="_blank" class="footer__menu-item"
+                  >Help Center</a
+                >
+                <a href="#" target="_blank" class="footer__menu-item"
+                  >Suggest Feature</a
+                >
+                <a href="#" target="_blank" class="footer__menu-item"
+                  >Subscribe</a
+                >
+              </ul>
+            </div>
+          </div>
         </div>
-        </div>
-    </section>
-    
-</body>
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-<script src="./script.js"></script>
+        <!-- </div> -->
+      </div>
+      <div class="footer__docs">
+        <a href="#" class="footer__terms">Terms</a>
+        <a href="#" class="footer__policy">Private Policy</a>
+      </div>
+      <div class="footer__copyright">© Artopia, Inc @ All Rights Reserved</div>
+    </footer>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="./script.js"></script>
 </html>

@@ -1,0 +1,33 @@
+.login {
+  display: none;
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  z-index: 100000;
+  &__content {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(
+      45deg,
+      rgba(161, 89, 255, 0.496),
+      rgb(71, 70, 70)
+    );
+  }
+  &__email {
+    height: 50px;
+    width: 500px;
+  }
+  &__button {
+    background-color: rgba(161, 89, 255, 0.496);
+    color: white;
+    margin: 20px;
+    height: 50px;
+    width: 100px;
+  }
+}
+.login.logged {
+  display: none;
+}

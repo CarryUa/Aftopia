@@ -1,3 +1,4 @@
+$primaryColor: rgba(162, 89, 255, 1);
 @import "./default";
 @import "./header";
 @import "./_brands";
@@ -7,3 +8,8 @@
 @import "./categories";
 @import "./hero";
 @import "./sub2getnews";
+@import "./login";
+@import "./footer";
+// .hidden {
+//   display: none;
+// }
